@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'alex.project'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.jogamp.jogl', name: 'jogl-all-main', version: '2.0.2'
+    compile group: 'org.jogamp.jogl', name: 'jogl-all', version: '2.0.2'
+
+    compile group: 'org.jogamp.gluegen', name: 'gluegen-rt-main', version: '2.0.2'
+    compile group: 'org.jogamp.gluegen', name: 'gluegen-rt', version: '2.0.2'
+    compile files('jars/ElevatedGeometry-4.1.jar')
+    compile files('jars/ElevatedWorldRebuild-1.0.jar')
+    compile files('jars/ElevatedLearningRebuild-1.0.jar')
+    compile files('jars/BufferStufferRebuild-1.2.jar')
+}
